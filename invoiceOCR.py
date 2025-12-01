@@ -59,7 +59,7 @@ def extract_data(text) -> list:
 
 def main():
     with sync_playwright() as p:
-        with open('example.csv') as f:
+        with open('data/example.csv') as f:
             cols = f.readline()
         df = pd.DataFrame(columns=cols.strip().split(','))
 
