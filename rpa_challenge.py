@@ -2,7 +2,7 @@ import pandas as pd
 from playwright.sync_api import sync_playwright
 from playwright.sync_api import expect
 
-df = pd.read_excel('challenge.xlsx', dtype=str)
+df = pd.read_excel('data/challenge.xlsx', dtype=str)
 df.columns = df.columns.str.strip()
 
 with sync_playwright() as p:

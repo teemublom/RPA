@@ -6,8 +6,8 @@ import pytesseract
 import config
 pytesseract.pytesseract.tesseract_cmd = config.TESSERACT_CMD
 
-sample1_text = iv.img2str('sample1.jpg')
-sample2_text = iv.img2str('sample2.jpg')
+sample1_text = iv.img2str('data/sample1.jpg')
+sample2_text = iv.img2str('data/sample2.jpg')
 
 class TestExtractDate:
     def test_one(self):
