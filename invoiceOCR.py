@@ -7,8 +7,9 @@ import re
 import pytesseract
 import requests
 import io
+import config
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
+pytesseract.pytesseract.tesseract_cmd = config.TESSERACT_CMD
 dateformat = '%d-%m-%Y'
 
 def img2str(filename: str) -> str:

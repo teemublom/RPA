@@ -3,7 +3,8 @@ import invoiceOCR as iv
 from datetime import date
 
 import pytesseract
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
+import config
+pytesseract.pytesseract.tesseract_cmd = config.TESSERACT_CMD
 
 sample1_text = iv.img2str('sample1.jpg')
 sample2_text = iv.img2str('sample2.jpg')
